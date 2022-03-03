@@ -1,0 +1,61 @@
+$myFont: Helvetica;
+$myFontSize: 18px;
+$myWidth: 680px;
+
+body {
+    font-family: $myFont;
+    font-size: $myFontSize;
+}
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+    background-color: #37474F;
+
+    a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    a:active {
+        background-color: #f2f2f2;
+        color: #232121;
+    }
+}
+
+.about {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-decoration: underline;
+        margin-top: 2rem;
+        color: #37474F
+    }
+
+    &_blocks {
+        padding-bottom: 2rem;
+    }
+
+    &_lead {
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        color: #232121;
+        text-align: justify;
+    }
+}

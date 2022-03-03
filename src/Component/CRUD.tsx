@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Row, Col, Table, Card, Form, Button, Input, Modal } from 'antd'
 import { DataSource } from '../models/model';
 import users from '../models/data';
+import '../style.scss';
 
 const CRUD = () => {
   const [taskForm] = Form.useForm();
@@ -116,6 +117,7 @@ const CRUD = () => {
           Create
         </Button>
       }>
+        
         <Table
           columns={columns}
           dataSource={dataSource}
